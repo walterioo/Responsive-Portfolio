@@ -119,6 +119,7 @@ footer {
     position: fixed;
     bottom: 0px;
     left: 0px;
+    z-index: 9999;
 }
     
 #footer-bar {
@@ -249,14 +250,9 @@ input[type=submit]:hover {
         width: 40%;
     }
 
-
-
-
     .portfolio-photos {
-        margin-left: 6%;
-        margin-bottom: 10px;
-        width: 270px;
-        height: 270px;
+        width: 230px;
+        height: 230px;
      }
  
      .portfolio-photos img {
