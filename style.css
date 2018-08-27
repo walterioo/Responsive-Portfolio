@@ -101,7 +101,6 @@ h2 {
     margin-left: 20px;
     margin-right: 20px;
     width: 200px;
-    clear: both;
 }
 
 p {
@@ -249,6 +248,7 @@ input[type=submit]:hover {
     }
     #myphoto {
         width: 40%;
+        max-width: 250px;
     }
     .portfolio-photos {
         width: 230px;
@@ -289,6 +289,8 @@ input[type=submit]:hover {
     .wrapper {
         margin-top: 90px;
         margin-bottom: 40px;
+        clear: both;
+        overflow: auto;
     }
     footer {
         width: 100%;
@@ -310,9 +312,18 @@ input[type=submit]:hover {
         padding: 10px;
     }
     #myphoto {
-        width: 90%;
-        margin-bottom: 5px;
+        width: 70%;
+        margin-left: 15%;
+        margin-bottom: 10px;
+        max-width: 250px;
+        display: inline-block;
     }
+
+    article {
+        clear: both;
+        overflow: auto;
+    }
+
     .portfolio-photos {
         margin-left: 10%;
         clear: both;
