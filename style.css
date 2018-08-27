@@ -33,7 +33,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 9999;
 }
 
 .menu-bar div {
@@ -202,6 +202,7 @@ input[type=submit]:hover {
     text-align: center;
     position: relative;
     border: 1px solid #dddddd;
+    z-index: 1;
 }
 
 .text-block {
@@ -229,6 +230,10 @@ input[type=submit]:hover {
     .menu-bar div, .wrapper {
         width: 100%;
     }
+
+    #myphoto {
+        width: 30%;
+    }
 }
 
 @media screen and (max-width: 768px) and (min-width: 641px) {
@@ -239,9 +244,36 @@ input[type=submit]:hover {
     input, textarea {
         width:100%
     }
+
+    #myphoto {
+        width: 40%;
+    }
+
+
+
+
+    .portfolio-photos {
+        margin-left: 6%;
+        margin-bottom: 10px;
+        width: 270px;
+        height: 270px;
+     }
+ 
+     .portfolio-photos img {
+         width: 100%;
+         height: 100%;
+     }
+ 
+     .text-block {
+         width: 100%;
+     }
 }
 
 @media screen and (max-width: 640px) {
+    body {
+        min-height: 100%;
+    }
+
     .menu-bar {
        position: absolute;
        top:0px;
@@ -258,11 +290,34 @@ input[type=submit]:hover {
     .wrapper {
 
         margin-top: 80px;
-        
+        margin-bottom 30px;
     }
 
     .menu-bar div, .wrapper {
         width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+    }
+        
+    #footer-bar {
+        background-color: #4aaaa5;
+        height: 3px;
+    }
+    
+    #copyright {
+        text-align: center;
+        background-color: #666;
+        color: #dddddd;
+        height: 30px;
+        font-size: 10px;
+        width: 100%;
+        padding: 10px;
+        
     }
 
     #myphoto {
