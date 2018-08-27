@@ -33,7 +33,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 1;
 }
 
 .menu-bar div {
@@ -142,15 +142,17 @@ form {
     margin-right: 20px;
 }
 
+input, textarea {
+    width: 690px;
+}
+
 input {
-    width: 50%;
     box-sizing: border-box;
     padding: 12px 20px;
     margin-bottom: 15px;
     border: 2px solid #dddddd;
     border-radius: 6px;
     outline:none;
-    
 }
 
 input[type=text]:focus,
@@ -160,7 +162,6 @@ textarea:focus {
 }
 
 textarea {
-    width: 50%;
     height: 200px;
     padding: 12px 20px;
     margin-bottom: 15px;
@@ -220,4 +221,70 @@ input[type=submit]:hover {
 .portfolio-photos img {
     width: 200px;
     height: 200px;
+}
+
+/* Homework 2 - Responsive Portfolio */
+
+@media screen and (max-width: 980px) and (min-width: 769px){
+    .menu-bar div, .wrapper {
+        width: 100%;
+    }
+
+
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 641px) {
+    .menu-bar div, .wrapper {
+        width: 100%;
+    }
+
+    input, textarea {
+        width:100%
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .menu-bar {
+       position: absolute;
+       top:0px;
+    }
+
+    h1 {
+        width: 100%;
+    }
+
+    .menu-bar a {
+        width: 33.33%
+    }
+
+    .wrapper {
+
+        margin-top: 80px;
+        
+    }
+
+    .menu-bar div, .wrapper {
+        width: 100%;
+    }
+
+    footer {
+        
+    }
+    
+    .portfolio-photos {
+       margin-left: 25%;
+       margin-bottom: 10px;
+       clear: both;
+    }
+    
+    input, textarea {
+        width:100%
+    }
+
+    input[type=submit]
+    {
+        width: 100px;
+    }
 }
