@@ -277,7 +277,7 @@ input[type=submit]:hover {
         height: 50px;
         padding: 10px;
         animation-name: background;
-        animation-duration: 3s;
+        animation-duration: 5s;
         animation-iteration-count: infinite;
     }
     .menu-bar a {
@@ -294,6 +294,8 @@ input[type=submit]:hover {
         margin-bottom: 40px;
         clear: both;
         overflow: auto;
+        animation: opacity;
+        animation-duration: 3s;
     }
     footer {
         width: 100%;
@@ -352,21 +354,28 @@ input[type=submit]:hover {
         position: relative;
         animation-name: slide;
         animation-duration: 3s;
-    
+        
     }
 
 }
 
 @keyframes background {
     0% {
-        background-color: #CDB059;
-    }
-    50% {
         background-color: #4aaaa5;
     }
-    100% {
+    25% {
+        background-color: #8edc9d;
+    }
+    50% {
         background-color: #CDB059;
     }
+    75% {
+        background-color: #ef7126;
+    }
+    100% {
+        background-color: #4aaaa5;
+    }
+
 }
 
 @keyframes slide {
@@ -374,4 +383,9 @@ input[type=submit]:hover {
     
     100% {right:0px}
     
+}
+
+@keyframes opacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
