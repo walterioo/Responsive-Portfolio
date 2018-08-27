@@ -229,9 +229,6 @@ input[type=submit]:hover {
     .menu-bar div, .wrapper {
         width: 100%;
     }
-
-
-
 }
 
 @media screen and (max-width: 768px) and (min-width: 641px) {
@@ -242,7 +239,6 @@ input[type=submit]:hover {
     input, textarea {
         width:100%
     }
-
 }
 
 @media screen and (max-width: 640px) {
@@ -269,14 +265,27 @@ input[type=submit]:hover {
         width: 100%;
     }
 
-    footer {
-        
+    #myphoto {
+        width: 90%;
+        margin-bottom: 5px;
     }
     
     .portfolio-photos {
-       margin-left: 25%;
+       margin: 0 auto;
+       margin-left: 10%;
        margin-bottom: 10px;
        clear: both;
+       width: 80%;
+       height: 80%;
+    }
+
+    .portfolio-photos img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .text-block {
+        width: 100%;
     }
     
     input, textarea {
